@@ -4,28 +4,6 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-// heres all the stuff about the exercises {{{
-// 3.7 use morgan middleware for logging
-// 3.8 configure morgan to show data sent with HTTP POST requests
-
-// 3.9 asks you to connect the phonebook frontend with the backend
-// q: what is the 'backend'
-//
-// 3.10 deploy the backend to the internet, like Fly.io or Render
-// test the backend with a browser and Postman
-// create a README.md at the root of the repo and a link
-// to your online application to it
-
-
-// 3.11 generate a production build of your front end
-// and add it to the internet application using the method introduced
-
-// make sure the frontend still works locally in development mode 
-// when started with the command `npm run dev`
-
-//
-// }}}
-
 let notes = [
   {
     id: "1",
