@@ -3,6 +3,7 @@ const cors = require('cors')
 const app = express()
 app.use(express.json())
 app.use(cors())
+app.use(express.static('dist'))
 
 let notes = [
   {
@@ -23,7 +24,7 @@ let notes = [
 ]
 
 const generateId = () => {
-  const maxId = note.length > 0
+  const maxId = notes.length > 0
     ? Math.max(...notes.map(n => Number(n.id)))
     : 0
   return String(maxId + 1)
